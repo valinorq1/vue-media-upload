@@ -22,7 +22,7 @@
                 <!--IMAGES PREVIEW-->
 
                 <div v-for="(image, index) in savedMedia" :key="index" class="mu-image-container">
-                    <img :src="location + '/' + image.name" alt="" class="mu-images-preview">
+                    <img :src="image.name" alt="" class="mu-images-preview">
                     <button @click="removeSavedMedia(index)" class="mu-close-btn" type="button">
                         <svg class='mu-times-icon' xmlns="http://www.w3.org/2000/svg" width="0.65em" height="0.65em"
                             preserveAspectRatio="xMidYMid meet" viewBox="0 0 352 512">
